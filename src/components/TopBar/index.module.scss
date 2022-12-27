@@ -1,0 +1,15 @@
+.header {
+  padding: 15px; 
+  border-bottom: 1px solid #e7ebf0;
+  .blod {
+    font-weight: 700;
+  }
+  .homeLink {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .content {
+    align-items: center;
+    display: flex;
+  }
+}

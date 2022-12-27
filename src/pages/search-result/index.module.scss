@@ -1,0 +1,15 @@
+.container {
+  .body{
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+    .title {
+      margin-bottom: 20px;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 850px;
+    }
+  }
+}

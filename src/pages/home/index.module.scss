@@ -1,0 +1,14 @@
+.body {
+  display: flex;
+  justify-content: center;
+  .content {
+    margin: 100px 0;
+    width: 100%;
+    .title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 30px ;
+    }
+  }
+}

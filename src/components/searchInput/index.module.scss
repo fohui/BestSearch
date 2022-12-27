@@ -1,0 +1,25 @@
+.searchBox {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  .searchInput {
+    width: 80%;
+    border: 1px solid #e7ebf0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  :global {
+    .Mui-focused{
+      border-color: #8a8d91;
+    }
+  }
+  .searchBtn {
+    margin-left: 10px;
+    border-color: #e7ebf0;
+    color: #8f9195;
+  }
+  .searchBtn:hover {
+    border: 1px solid #8a8d91;
+    background-color: transparent ;
+  }
+}
