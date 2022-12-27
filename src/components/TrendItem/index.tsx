@@ -28,6 +28,14 @@ const getChartSize = (responsive:Record<string, boolean>)=>{
     return chartSize.small
   }
 }
+const dateFilter = (date: string| undefined):string => {
+  if(!date) return '';
+
+  const [year, month] = date.split('-');
+  const monthMap = ['','Jan','Feb','Mar', 'Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  
+  return `${monthMap[+month]} ${year}`
+}
 const TrendItem:FunctionComponent<PropsWithChildren<IProps>> = (props)=>{
   const containerEl = useRef(null); 
   const chartRef = useRef<Chart | null>(null);
@@ -82,7 +90,7 @@ const TrendItem:FunctionComponent<PropsWithChildren<IProps>> = (props)=>{
         <p>Growth {data.growth}%</p>
       </div>
       <div ref={containerEl}></div>
-      <div className={styles.date}>{dateStart}-{dateEnd}</div>
+      <div className={styles.date}>{dateFilter(dateStart)} - {dateFilter(dateEnd)}</div>
     </div>
   )
 }
