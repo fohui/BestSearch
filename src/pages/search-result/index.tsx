@@ -14,7 +14,7 @@ const Result = ()=>{
   const keyword = useAppSelector((state) => state.search.keyword);
   const loading = useAppSelector((state) => state.search.loading);
   const trends = useAppSelector((state) => state.search.trends);
-
+  
   const onSearch = useCallback((key:string)=>{
     if(loading) return;
     if(!key) return;
